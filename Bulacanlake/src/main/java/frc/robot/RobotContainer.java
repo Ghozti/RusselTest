@@ -19,6 +19,13 @@ import edu.wpi.first.wpilibj2.command.Command;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
+
+  /*
+   * The RobotContainer class will be used to wrap up every subsystem and command you create. They should all be instanciated here
+   * In order to simplify things, we will create a teleop() method and call that in the Robot.java class in the teleopPeriodic() method
+   * In the teleop() method, we will call any subsystem periodic() methods 
+   */
+
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
 
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
